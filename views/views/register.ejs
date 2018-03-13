@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>
+            SellX - The biggest community to buy and sell
+        </title>
+        <link rel="shortcut icon" href="S.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="ui inverted segment">
+            <div class="ui inverted secondary menu">
+                <div class="header item">
+                    <strong>SellX</strong>
+                </div>  
+                <a class="item" href="/">
+                    <i class="Home icon"></i>
+                    Home
+                </a> 
+                <a class="item">
+                    <i class="Mail icon"></i>
+                    Messages
+                </a>
+                <div class="right menu">
+                    <div class="ui action input">
+                        <input type="text" placeholder="Enter Keyword">
+                        <div class="ui button"><i class="Search icon"></i>Search</div>
+                    </div>
+                    <a class="item"><i class="Add User icon"></i>Sign Up</a>
+                    <a class="item"><i class="Sign In icon"></i>Log In</a>
+                </div>
+            </div>
+        </div>
+        <div class="forms">
+            <form class="ui form" action="/register" method="POST">
+                <h4>A little about you</h4>
+                <div class="two fields">
+                    <div class="field">
+                        <input type="text" name="user[first]" placeholder="First Name" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="user[last]" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="email" name="user[mail]" placeholder="Email" required>
+                </div>
+                <div class="field">
+                    <input type="text" name="user[phone]" placeholder="Phone Number" required>
+                </div>
+                <div class="field">
+                    <input type="password" name="user[pass]" placeholder="Password" required>
+                    <div class="pinfo">
+                        Password Must be
+                        <ul>
+                            <li>8-20 characters long</li>
+                            <li>A combination of only alphanumeric and special characters</li>
+                            <li>Without space</li>
+                            <li>Not Easy to guess</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="password" name="user[cpass]" placeholder="Re-enter Password" required>
+                    <div class="pinfo">Passwords must match</div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" tabindex="0">
+                        <label>I agree to the Terms and Conditions</label>
+                    </div>
+                </div>
+                <button class="ui button" type="submit" onclick="return validate()">Register</button>
+            </form>
+            <hr>
+            <p>Already have an account? <a href="/"><u>Login</u></a></p>
+        </div>
+        <script src="validate.js"></script>
+    </body>
+</html>

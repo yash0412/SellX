@@ -1,0 +1,24 @@
+body {
+    background: url("back1.jpg");
+    color: white;
+    background-size: cover;
+
+}
+.forms {
+    width: 45%;
+    display: table;
+    padding-bottom: 30px;
+    background: rgba(0, 0, 0, 0.603);
+    box-shadow: #808080;
+    margin: 6% auto;
+    border-radius: 7px;
+}
+form {
+    width: 80%;
+    padding-top: 10%;
+    padding-left: 10%;
+    
+}
+.ui.form .field > label{
+    color: aliceblue;
+}

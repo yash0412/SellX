@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            SellX - The biggest community to buy and sell
+        </title>
+        <link rel="shortcut icon" href="S.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="ui inverted segment">
+            <div class="ui inverted secondary menu">
+                <div class="header item">
+                    <strong>SellX - The best place to buy and sell</strong>
+                </div>  
+                <div class="right menu">
+                    <a class="item" href="/register"><i class="Add User icon"></i>Sign Up</a>
+                    <a class="item" href="/"><i class="Sign In icon"></i>Log In</a>
+                </div>
+            </div>
+        </div>
+        <div class="forms">
+            <form class="ui form" action="/login" method="POST"> 
+                <h4>Login to SellX</h4>
+                <div class="field">
+                    <input type="text" name="user[mail]" placeholder="Username">
+                </div>
+                <div class="field">
+                    <input type="password" name="user[pass]" placeholder="Password">
+                </div>
+                <button class="ui button" type="submit">Log In</button>
+            </form>
+            <hr>
+            <p>Don't have an account? <a href="/register"><u>Register now</u></a></p>
+        </div>
+    </body>
+</html>

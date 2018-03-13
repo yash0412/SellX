@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Buy and sell near you..!! It's that simple. :-)
+        </title>
+        <link rel="shortcut icon" href="S.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <div class="ui inverted segment">
+            <div class="ui inverted secondary menu">
+                <div class="header item">
+                    <strong>SellX</strong>
+                </div>  
+                <a class="item" href="/home">
+                    <i class="home icon"></i>
+                    Home
+                </a> 
+                <div class="right menu">         
+                    <a class="item"><i class="icon user circle"></i><%= user.first_name%> <%= user.last_name%></a>                  
+                    <a class="item" href="/"><i class="sign out icon"></i>Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="forms">
+            <form class="ui form" method="POST" action="/add" enctype="multipart/form-data">
+                <h4>Details of the product</h4>
+                <div class="field">
+                    <label for = "Category" class="ui sub header">Category:</label>
+                    <select name="category" id="cata" required>
+                        <option value=""></option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Mobiles">Mobiles</option>
+                        <option value="Stationary">Stationary</option>
+                        <option value="Books">Books</option>
+                        <option value="Automobiles">Automobiles</option>
+                        <option value="Wearables">Wearables</option>
+                        <option value="Sport Items">Sport Items</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="desc">Description(<250 characters):(Brand, features, condition...)</label>
+                    <textarea name="desc" id="" cols="20" rows="2" required></textarea>
+                </div>  
+                <div class="field">
+                    <label for="Images">Image:</label>
+                    <input type="file" name="image" accept="image/gif, image/jpeg, image/png" required>
+                </div>
+                <div class="field">
+                    <label for="Age">Age:</label>
+                    <input type="number" name="age" id="age" placeholder="Input in months" required>
+                </div>
+                <div class="field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="warranty">
+                            <label style="color:white">Warranty</label>
+                        </div>
+                </div>
+                <div class="field">
+                    <label for="Price">Price:</label>
+                    <input type="number" placeholder="In ₹" name="price" required >
+                </div>
+                <div class="field">
+                    <input type="Submit" name="submit" value="Submit" class="ui button inverted">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

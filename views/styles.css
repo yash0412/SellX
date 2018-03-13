@@ -1,0 +1,104 @@
+.segment {
+    margin-top: 0px;
+    border-radius: 0px;
+}
+
+.ui.inverted.segment{
+    background-color: black;
+}
+
+a.item {
+    color: #333;
+}
+
+.segment input {
+    color: white;
+}
+
+body {
+    background: url("back1.jpg");
+    color: white;
+    background-size: cover;
+}
+
+.forms {
+    width: 45%;
+    display: table;
+    padding-bottom: 30px;
+    background: rgba(0, 0, 0, 0.603);
+    box-shadow: 5px 5px rgba(67, 67, 68, 0.479);
+    margin: 6% auto;
+    border-radius: 7px;
+}
+
+.login {
+    border-right: 1px black solid;
+    padding: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+td {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.ui.form input[type="text"], .ui.form input[type="password"], .ui.form input[type="email"], .ui.form input[type="number"] {
+    border-radius: 4px;
+    background: rgb(169,169,169);
+    width: 100%;
+}
+
+.ui.form input[type="text"]::placeholder, .ui.form input[type="password"]::placeholder, .ui.form input[type="email"]::placeholder, .ui.form input[type="number"]::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+.ui.form input[type="text"]:focus::placeholder{
+    width:  20px;
+}
+
+form {
+    width: 80%;
+    padding-top: 10%;
+    padding-left: 10%;
+    
+}
+
+p {
+    margin-top: 2%;
+    margin-left: 10%;
+}
+hr{
+    width: 80%
+}
+
+a{
+    color: aqua;
+}
+
+form.ui.form {
+    width: 100%;
+    padding-right: 10%;
+}
+
+.ui.button {
+    background-color: #333;
+    color: antiquewhite;
+}
+label {
+    color: white;
+}
+h4 {
+    color: white;
+}
+
+.pinfo {
+    display: none;
+}
+
+/* input[type="password"]:focus ~ .pinfo {
+    display: block;
+} */
+
+input[type="password"]:focus + .pinfo {
+    display: block;
+}

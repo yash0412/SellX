@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>
+            SellX - The biggest community to buy and sell
+        </title>
+        <link rel="shortcut icon" href="S.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="ui inverted segment">
+            <div class="ui inverted secondary menu">
+                <div class="header item">
+                    <strong>SellX - The best place to buy and sell</strong>
+                </div>  
+                <div class="right menu">
+                    <a class="item" href="/register"><i class="Add User icon"></i>Sign Up</a>
+                    <a class="item" href="/"><i class="Sign In icon"></i>Log In</a>
+                </div>
+            </div>
+        </div>
+        <div class="forms">
+            <form class="ui form" action="/register" method="POST">
+                <h4>A little about you</h4>
+                <div class="two fields">
+                    <div class="field">
+                        <input type="text" name="user[first]" placeholder="First Name" required maxlength="15">
+                    </div>
+                    <div class="field">
+                        <input type="text" name="user[last]" placeholder="Last Name" required maxlength="15">
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="email" name="user[mail]" placeholder="Email" required  maxlength="100">
+                </div>
+                <div class="field">
+                    <input type="text" name="user[phone]" placeholder="Phone Number" required  maxlength="11">
+                </div>
+                <div class="field">
+                    <input type="password" name="user[pass]" id="pass" placeholder="Password" required >
+                    <div class="pinfo">
+                        Password Must be
+                        <ul>
+                            <li>6-20 characters long</li>
+                            <li>A combination of only alphanumeric and special characters</li>
+                            <li>Without space</li>
+                            <li>Not Easy to guess</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="field">
+                    <input type="password" name="user[cpass]" id="cpass" placeholder="Re-enter Password" required>
+                    <div class="pinfo">Passwords must match</div>
+                </div>
+                <button class="ui button" type="submit" onclick="return checkForm()">Register</button>
+            </form>
+            <hr>
+            <p>Already have an account? <a href="/"><u>Login</u></a></p>
+        </div>
+        <script src="validate.js"></script>
+    </body>
+</html>
